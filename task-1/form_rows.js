@@ -1,5 +1,13 @@
-function main() {
-    // event handlers and other code here
+function removeRow() {
+    let row = document.getElementsByClassName("row");
+    row.remove();
 }
 
-main();
+
+var original = document.getElementById('duplicater');
+
+function duplicate() {
+    var clone = original.cloneNode(true); // 
+    clone.id = "duplicater";
+    original.parentNode.appendChild(clone);
+}

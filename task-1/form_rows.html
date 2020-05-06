@@ -6,11 +6,20 @@
     <script src="form_rows.js" defer></script>
 </head>
 <body>
-<div class="container">
-    <button id="add_row">Add row</button>
-    <form method="GET">
-        <label for="item_1">Item 1:</label><input type="text" name="item_1" id="item_1"/> <br/>
-    </form>
+
+
+<button id="button" onclick="duplicate()">Add row</button>
+<div id="duplicater"> 
+    <div id=rows">
+        <div class="row">
+        <form method="GET">
+            <label for="item_1">Item 1:</label><input type="text" name="item_1" id="item_1"/> 
+            <button id="button" onclick="removeRow()">Remove row</button><br/>
+        </form>
+</div>
+
+
+</div>
 </div>
 </body>
 </html>
