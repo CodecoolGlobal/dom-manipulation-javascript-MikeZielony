@@ -5,21 +5,13 @@
     <title>Form rows task</title>
     <script src="form_rows.js" defer></script>
 </head>
-<body>
-
-
-<button id="button" onclick="duplicate()">Add row</button>
-<div id="duplicater"> 
-    <div id=rows">
-        <div class="row">
-        <form method="GET">
-            <label for="item_1">Item 1:</label><input type="text" name="item_1" id="item_1"/> 
-            <button id="button" onclick="removeRow()">Remove row</button><br/>
-        </form>
+<div id="template">
+    <form method="GET">
+        <label for="item_1">Item 1:</label><input type="text" name="item_1" id="item_1"/> 
+        <button id="button" onClick="removeInput(this);">Remove row</button><br/>  
+    </form>
+    <button id="button" onClick="removeInput(this);">Remove row</button><br/>
 </div>
+<div id="add_more"></div>
 
-
-</div>
-</div>
-</body>
-</html>
+<button id="add_more_text" onClick="addInput('template', 'add_more');">Add row</button>
